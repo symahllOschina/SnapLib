@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/main_open_camera"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="打开摄像头"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/main_close_camera"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="关闭摄像头"
+        android:gravity="center"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="wifi"
+            android:layout_alignParentTop="true"
+            />
+        <EditText
+            android:id="@+id/wifi"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eventLog"
+            android:layout_toRightOf="@id/textView"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="4" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eventLog"
+            android:layout_toRightOf="@id/wifi"
+            android:text="gprs" />
+        <EditText
+            android:id="@+id/gprs"
+            android:layout_width="24dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eventLog"
+            android:layout_toRightOf="@id/textView2"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="0" />
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eventLog"
+            android:layout_toRightOf="@id/gprs"
+            android:text="baudrate" />
+        <EditText
+            android:id="@+id/baudrate"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eventLog"
+            android:layout_toRightOf="@id/textView3"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="9600" />
+        <Spinner
+            android:id="@+id/layoutList"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/eventLog"
+            android:layout_toRightOf="@id/baudrate"/>
+        <EditText
+            android:layout_height="match_parent"
+            android:id="@+id/eventLog"
+            android:layout_width="match_parent"
+            android:layout_below="@id/textView"
+
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="0dp"
+            android:ems="10"
+            android:gravity="top|left"
+            android:inputType="none|text|textMultiLine"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>
